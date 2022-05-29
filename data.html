@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>인스턴스란</title>
+</head>
+<body>
+   <!-- <script>
+      // 호이스팅 -> 이름함수 선언x
+      sub();
+      function main(){
+         console.log("welcome");
+      }
+      //
+      function sub(){
+         main();
+      }
+   </script> -->
+   <script>
+      sub();
+      // 호이스팅 -> 이름함수 선언x
+      //
+      function sub(){
+         console.log("javascript");
+         function main(){
+            console.log("welcome");
+         }
+         //main();
+      }
+   </script>
+</body>
+</html>
